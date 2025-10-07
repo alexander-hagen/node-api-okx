@@ -1,0 +1,41 @@
+{
+  "name": "node-api-okx",
+  "version": "0.0.1",
+  "description": "Non-official implementation of OKX's API's",
+  "main": "index.js",
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ]
+  },
+  "scripts": {
+    "test": "jest --coverage --passWithNoTests --verbose",
+    "badges": "istanbul-badges-readme --colors=red:50,yellow:80",
+    "patch": "npm version patch --no-git-tag-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexander-hagen/node-api-okx.git"
+  },
+  "keywords": [
+    "mexc",
+    "tradebots.nl"
+  ],
+  "author": "Alexander Hagen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexander-hagen/node-api-okx/issues"
+  },
+  "homepage": "https://github.com/alexander-hagen/node-api-okx#readme",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.6.1",
+    "istanbul-badges-readme": "^1.9.0",
+    "jest": "^29.7.0"
+  }
+}
